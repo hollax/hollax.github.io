@@ -1,82 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wakeel Ogunsanya">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <title>Wakeel Ogunsanya</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
 
-    <title>Starter Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/styles.css" rel="stylesheet">
-
-  </head>
-
-  <body >
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" 
-                  data-toggle="collapse" data-target="#navbar" 
-                  aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <header id="header" role="banner">
+        <div class="container">
+            <div id="navbar" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"></a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about-us">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#intro">Home</a></li>
-            <li><a href="#featured">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    </header><!--/#header-->
 
-    <div class="container">
+    <section id="main-slider" class="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>Backend Development</h1>
+                        <p class="lead">Backend Development using PHP, Python and C#
+                    </div>
+                </div>
+            </div><!--/.item-->
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>Frontend Development</h1>
+                        <p class="lead">Frontend development:: Javascript , CSS, HTML5, Angular, VueJs, ReactJs <br></p>
+                    </div>
+                </div>
+            </div><!--/.item-->
+            <div class="item">
+                <div class="container">
+                    <div class="carousel-content">
+                        <h1>Data Analysis</h1>
+                        <p class="lead">Analyzing and presentation of statistical <br></p>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.carousel-inner-->
+        <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
+        <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+    </section><!--/#main-slider-->
 
-        <div id="intro" class="block">
-            
-        </div>
-        <div id="featured" class="block">
-            
-        </div>
-        <div id="contact" class="block">
-            
-        </div>
+    <section id="services">
+        <div class="container">
+            <div class="box first">
+                <div class="row">
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-android icon-md icon-color2"></i>
+                             <h4>Android Development</h4>
+                            <p>Android application development services</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-apple icon-md icon-color1"></i>
+                            <h4>IOS Development</h4>
+                            <p>Responsive web design with flair for custom web development</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-windows icon-md icon-color3"></i>
+                            <h4>Windows Phone development</h4>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-css3 icon-md icon-color5"></i>
+                            <h4>Javascript development</h4>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-css3 icon-md icon-color5"></i>
+                            <h4>Javascript development</h4>
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                   <div class="col-md-4 col-sm-6">
+                        <div class="center">
+                            <i class="icon-globe icon-md icon-color1"></i>
+                            <h4>Web Development</h4>
+                            <p>Responsive web design with flair for custom web development</p>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#services-->
 
-    </div><!-- /.container -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="box">
+                <div class="center gap">
+                    <h2>Portfolio</h2>
+                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac<br>turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+                </div><!--/.center-->
+                <ul class="portfolio-filter">
+                    <li><a class="btn btn-primary active" href="#" data-filter="*">All</a></li>
+                    <li><a class="btn btn-primary" href="#" data-filter=".bootstrap">Bootstrap</a></li>
+                    <li><a class="btn btn-primary" href="#" data-filter=".html">HTML</a></li>
+                    <li><a class="btn btn-primary" href="#" data-filter=".wordpress">Wordpress</a></li>
+                </ul><!--/#portfolio-filter-->
+                <ul class="portfolio-items col-4">
+                    <li class="portfolio-item apps">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item1.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item1.jpg"><i class="icon-eye-open"></i></a>             
+                                </div>
+                            </div>
+                            <h5>Lorem ipsum dolor sit amet</h5>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item joomla bootstrap">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item2.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item2.jpg"><i class="icon-eye-open"></i></a>  
+                                </div>
+                            </div> 
+                            <h5>Lorem ipsum dolor sit amet</h5>         
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item bootstrap wordpress">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item3.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item3.jpg"><i class="icon-eye-open"></i></a>        
+                                </div> 
+                            </div>
+                            <h5>Lorem ipsum dolor sit amet</h5>          
+                        </div>           
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item joomla wordpress apps">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item4.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item4.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>   
+                            </div>
+                            <h5>Lorem ipsum dolor sit amet</h5>        
+                        </div>           
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item joomla html">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item5.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item5.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>  
+                            </div>
+                            <h5>Lorem ipsum dolor sit amet</h5>  
+                        </div>       
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item wordpress html">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item6.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item6.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>  
+                            </div>
+                            <h5>Lorem ipsum dolor sit amet</h5>         
+                        </div>           
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item joomla html">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item5.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item5.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>  
+                            </div>
+                            <h5>Lorem ipsum dolor sit amet</h5>  
+                        </div>       
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item wordpress html">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/portfolio/thumb/item6.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item6.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>Lorem ipsum dolor sit amet</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                </ul>   
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
 
+   <section id="about-us">
+        <div class="container">
+            <div class="box">
+                <div class="center">
+                    <h2>Meet the Team</h2>
+                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et<br>malesuada fames ac turpis egestas.</p>
+                </div>
+                <div class="gap"></div>
+                <div id="team-scroller" class="carousel scale">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
+                                        <h3>Agnes Smith<small class="designation">CEO &amp; Founder</small></h3>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team2.jpg" alt="" ></p>
+                                        <h3>Donald Ford<small class="designation">Senior Vice President</small></h3>
+                                    </div>
+                                </div>        
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team3.jpg" alt="" ></p>
+                                        <h3>Karen Richardson<small class="designation">Assitant Vice President</small></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team3.jpg" alt="" ></p>
+                                        <h3>David Robbins<small class="designation">Co-Founder</small></h3>
+                                    </div>
+                                </div>   
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
+                                        <h3>Philip Mejia<small class="designation">Marketing Manager</small></h3>
+                                    </div>
+                                </div>     
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team2.jpg" alt="" ></p>
+                                        <h3>Charles Erickson<small class="designation">Support Manager</small></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left-arrow" href="#team-scroller" data-slide="prev">
+                        <i class="icon-angle-left icon-4x"></i>
+                    </a>
+                    <a class="right-arrow" href="#team-scroller" data-slide="next">
+                        <i class="icon-angle-right icon-4x"></i>
+                    </a>
+                </div><!--/.carousel-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#about-us-->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script >
-        var scroll = $('body').scrollspy({ target: '#navbar' });
-        var loaded = {};
-        scroll.on('activate.bs.scrollspy' , function(e){
-            var a  = $(e.target).children('a');
-            var hash = a.attr('href');
-            var container = $(hash);
-            if(! loaded[hash]){
-                container.load('blocks/'+hash.replace('#' , '')+'.html');
-                loaded[hash] = true
-            }
-        });
-    </script>
-    
-  </body>
+    <section id="contact">
+        <div class="container">
+            <div class="box last">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">Connect With Wakeel Ogunsanya</h1>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <style>
+                                    .social li {
+                                        display: inline-block;
+                                    }
+                                </style>
+                                <ul class="social">
+                                    <li>
+                                        <a href="http://www.facebook.com/hollax1">
+                                            <i class="icon-facebook icon-social"></i><br>
+                                        <br>
+                                        <span>Facebook </span></a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-pinterest icon-social"></i><br>
+                                            <span>Pinterest </span></a>
+                                    </li>
+                                    <li><a href="#"><i class="icon-linkedin icon-social"></i> 
+                                            <span>Linkedin</span></a>
+                                    </li>
+                                    <li><a href="#"><i class="icon-twitter icon-social"></i> <span>Twitter </span></a></li>
+                                    <li><a href="#"><i class="icon-youtube icon-social"></i> <span>Youtube </span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!--/.col-sm-6-->
+                </div><!--/.row-->
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#contact-->
+
+  
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
