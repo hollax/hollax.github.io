@@ -476,7 +476,8 @@ a:focus {
   margin-left: 20px;
   width: 200px;
   height: 78px;
-  background: url(../images/logo.png) no-repeat 0 50%;
+  background: url(../images/hollax-cartoon.png) no-repeat center;
+  background-size: contain;
 }
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
@@ -500,7 +501,7 @@ a:focus {
 .navbar-default .navbar-nav > li.active:hover > a:focus,
 .navbar-default .navbar-nav > li:hover > a:focus,
 .navbar-default .navbar-nav > li:focus > a:focus {
-  background-color: #1abc9c;
+  background-color: #1abc9c;;
   color: #fff;
 }
 .icon-lg {
