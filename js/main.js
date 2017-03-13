@@ -1,5 +1,31 @@
 jQuery(function($) {
-
+        // progress bars
+            let lPhp = $('#l-php').progressbarManager({ totalValue : 100, initValue : 0, animate : true , stripe : true });
+            let lCSharp = $('#l-csharp').progressbarManager({ totalValue : 100, initValue : 0, animate : true , stripe : true });
+            let lPython = $('#l-python').progressbarManager({ totalValue : 100, initValue : 0, animate : true , stripe : true });
+            let lJava = $('#l-java').progressbarManager({ totalValue : 100, initValue : 0, animate : true , stripe : true });
+            let lJs = $('#l-js').progressbarManager({ totalValue : 100, initValue : 0, animate : true , stripe : true });
+            let lCss = $('#l-css').progressbarManager({ totalValue : 100, initValue : 0, animate : true , stripe : true });
+            
+            
+         function refreshProgress(){
+           var val = 0;
+           
+            lPhp.setValue(0).style('success');
+            lCSharp.setValue(0).style('danger');
+            lPython.setValue(0).style('warning');
+            lJava.setValue(0).style('success');
+            lJs.setValue(0).style('danger');
+            lCss.setValue(0).style('success');
+            setTimeout(function(){
+                lPhp.setValue(0).setValue(50).setValue(95);
+                lCSharp.setValue(0).setValue(70);
+                lPython.setValue(0).setValue(80);
+                lJava.setValue(0).setValue(79);
+                lJs.setValue(0).setValue(95);
+                lCss.setValue(0).setValue(95);
+            },1000);
+        }
 	$(function(){
 		$('#main-slider.carousel').carousel({
 			interval: 10000,
@@ -29,7 +55,18 @@ jQuery(function($) {
 
 	//scrollspy
 	$('[data-spy="scroll"]').each(function () {
-		var $spy = $(this).scrollspy('refresh')
+		var $spy = $(this).scrollspy('refresh');
+               
+            $spy.on('activate.bs.scrollspy' , function(e){
+                var a  = $(e.target).children('a');
+                var hash = a.attr('href');
+                // if its languages
+                if(hash == '#languages'){
+                    refreshProgress();
+                }
+               
+            });
+
 	})
 
 	//PrettyPhoto

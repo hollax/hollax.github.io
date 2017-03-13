@@ -19,6 +19,13 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    
+    <meta property="og:site_name" content="Wakeel Ogunsanya" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hollax.github.io/" />
+    <meta property="og:description" content="Full-stack developer solving problems using PHP, C#, Java, Python, Javascript CSS" />
+    <meta property="og:title" content="Professional Software Developer" />
+    <meta property="og:image" content="https://hollax.github.io/images/hollax.jpg" />
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -40,7 +47,7 @@
                         <li><a href="#services">Skills</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#language">Languages</a></li>
+                        <li><a href="#languages">Languages</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -83,7 +90,7 @@
         <div class="container">
             <div class="box first">
                 <div class="row">
-                    
+                    <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="icon-android icon-md icon-color2"></i>
@@ -105,6 +112,7 @@
                             <p> Windows phone development.</p>
                         </div>
                     </div><!--/.col-md-4-->
+                    </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="center">
                             <i class="icon-css3 icon-md icon-color5"></i>
@@ -200,39 +208,7 @@
                             <h5>Lorem ipsum dolor sit amet</h5>  
                         </div>       
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item wordpress html">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item6.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item6.jpg"><i class="icon-eye-open"></i></a>           
-                                </div>  
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>         
-                        </div>           
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla html">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item5.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item5.jpg"><i class="icon-eye-open"></i></a>          
-                                </div>  
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>  
-                        </div>       
-                    </li><!--/.portfolio-item-->
-                    <li class="portfolio-item wordpress html">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="images/portfolio/thumb/item6.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-danger" title="Lorem ipsum dolor sit amet" href="images/portfolio/full/item6.jpg"><i class="icon-eye-open"></i></a>           
-                                </div>   
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet</h5>        
-                        </div>         
-                    </li><!--/.portfolio-item-->
+                    
                 </ul>   
             </div><!--/.box-->
         </div><!--/.container-->
@@ -244,8 +220,11 @@
                 <div class="center">
                     <h2>Meet Wakeel</h2>
                     <p class="lead">I am a passionate software developer<br> when am not programming i watch Real Madrid football.</p>
+                
+                    <p >I don't find it difficult leaning new programming language.</p>
+                    <p>I believe if one could understand the elementary of computer programming, one can solve
+                        problems using any programming language.</p>
                 </div>
-                <div class="gap"></div>
                 <div id="team-scroller" class="carousel scale">
                     <div class="carousel-inner">
                         <div class="item active">
@@ -255,21 +234,102 @@
                                         <p><img class="img-responsive img-thumbnail img-circle" src="images/team1.jpg" alt="" ></p>
                                         <h3>Wakeel Ogunsanya<small class="designation">Software  &amp; Developer</small></h3>
                                     </div>
+                                   
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
+                  
                 </div><!--/.carousel-->
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#about-us-->
-
+    <style>
+        .progress-title{
+           font-family: fantasy;
+           font-size: 2em;
+           color: rgba(231, 76, 60, 0.79);
+                
+        }
+        .progress{
+            margin-bottom: -10px;
+            color: rgba(231, 76, 60, 0.79);
+        }
+        .progress-bar{
+            //  background-color: rgba(231, 76, 60, 0.79);
+        }
+        
+        #progress-table td:first-child{
+             width: 100px;
+        }
+        #progress-table td:last-child{
+             padding-top: 20px;
+        }
+        #languages .box h2{
+            margin-bottom: 5px;
+            
+        }
+        .box h2{
+            color: #1abc9c;
+        }
+        #alert-pannel{
+            width: 200px;
+            position: fixed;
+            bottom: 0px;
+        }
+    </style>
+       <section id="languages">
+            <div class="container">
+                <div class="box">
+                    <div class="center">
+                    <h2>Programming Languages</h2>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-md-offset-3">
+                     <table id="progress-table" class="table">
+                         <thead><th></th><th></th></thead>
+                         <tbody>
+                            <tr>
+                                <td><span class="progress-title">PHP </span> </td>
+                                <td><div id="l-php" class="progress-box"></div> </td>
+                            </tr>
+                            <tr>
+                                <td><span class="progress-title">CSHARP </span> </td>
+                                <td><span id="l-csharp" class="progress-box"></span> </td>
+                            </tr>
+                            <tr>
+                                <td><span class="progress-title">JAVA </span> </td>
+                                <td><span id="l-java" class="progress-box"></span> </td>
+                            </tr>
+                            <tr>
+                                <td><span class="progress-title">PYTHON </span> </td>
+                                <td><span id="l-python" class="progress-box"></span> </td>
+                            </tr>
+                            <tr>
+                                <td><span class="progress-title">JAVASCRIPT </span> </td>
+                                <td><span id="l-js" class="progress-box"></span> </td>
+                            </tr>
+                            <tr>
+                                <td><span class="progress-title">CSS </span> </td>
+                                <td><span id="l-css" class="progress-box"></span> </td>
+                            </tr>
+                        </tbody>
+                   </table>
+                </div>
+                </div>
+                </div>
+            </div>
+       </section>
+    
+    
     <section id="contact">
         <div class="container">
+            
             <div class="box last">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1 class="text-center">Connect With Wakeel Ogunsanya</h1>
+                        <h1 class="text-center">Let's Connect</h1>
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <style>
@@ -283,40 +343,52 @@
                                         <a href="http://www.facebook.com/hollax1">
                                             <i class="icon-facebook icon-social"></i>
                                         <br>
-                                        <span>Facebook </span></a>
+                                        </a>
                                     </li>
                                     <li><a href="#">
                                             <i class="icon-pinterest icon-social"></i>
                                         <br>
-                                        <span>Pinterest </span></a>
+                                        </a>
                                     </li>
                                     <li><a href="#"><i class="icon-linkedin icon-social"></i> 
                                         <br>
-                                        <span>Linkedin</span></a>
+                                        </a>
                                     </li>
                                     <li><a href="#"><i class="icon-twitter icon-social"></i> 
                                             <br>
-                                            <span>Twitter </span></a></li>
+                                           </a></li>
                                     <li><a href="#"><i class="icon-youtube icon-social"></i> 
                                             <br>
-                                            <span>Youtube </span></a></li>
+                                           </a></li>
                                 </ul>
                             </div>
                         </div>
+                        
+                        <div class="gap"></div>
+                        <div class="gap"></div>
                     </div><!--/.col-sm-6-->
                 </div><!--/.row-->
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#contact-->
+
     
-    <script>
-        
-    </script>
-  
+    <div id="alert-pannel" class="panel panel-primary">
+        <div class="panel-body bg-primary">Site it under construction!!!</div>
+    </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/bootstrap-progressbar-manager/bootstrap-progressbar-manager.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
+        
+     <script>
+        setTimeout(()=> $('#alert-pannel').show() , 10000);
+        setTimeout(()=> $('#alert-pannel').hide(500) , 15000);
+    </script>
+    <script>
+         
+    </script>
 </body>
 </html>
