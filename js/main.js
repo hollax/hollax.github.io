@@ -17,13 +17,14 @@ jQuery(function($) {
             lJava.setValue(0).style('success');
             lJs.setValue(0).style('danger');
             lCss.setValue(0).style('success');
+            
             setTimeout(function(){
-                lPhp.setValue(0).setValue(50).setValue(95);
-                lCSharp.setValue(0).setValue(70);
+                lPhp.setValue(0).setValue(50).setValue(100);
+                lCSharp.setValue(0).setValue(85);
                 lPython.setValue(0).setValue(80);
-                lJava.setValue(0).setValue(79);
-                lJs.setValue(0).setValue(95);
-                lCss.setValue(0).setValue(95);
+                lJava.setValue(0).setValue(75);
+                lJs.setValue(0).setValue(98);
+                lCss.setValue(0).setValue(100);
             },1000);
         }
 	$(function(){
